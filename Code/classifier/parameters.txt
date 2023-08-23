@@ -1,0 +1,18 @@
+The parameters of each classifier are set as follows:
+
+* ABRF_train:
+AdaBoostClassifier(base_estimator=RandomForestClassifier(random_state=28, n_estimators=100), learning_rate=10**-2)
+* LR_train:
+LogisticRegression(C=10, max_iter=1000)
+* MP_train:
+MLPClassifier(solver='adam', alpha=1e-2, hidden_layer_sizes=(10, 2), max_iter=1000, random_state=1)RandomForestClassifier(random_state=28, n_estimators=100, criterion="entropy")
+* RF_train:
+RandomForestClassifier(random_state=28, n_estimators=100, criterion="entropy")
+* SVM_train:
+svm.SVC(kernel="linear", C=5, probability=True)
+* XGB_train:
+param = {
+            'eta': 0.26,
+            'max_depth': 7,
+            'objective': 'multi:softprob',
+            'num_class': 2}
