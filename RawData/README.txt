@@ -7,4 +7,3 @@ m:mRNA
 * entitymap.txt：Correspondence between code names and real names.
 * heterogeneous network_edge.txt：All edges of heterogeneous network.
 * heterogeneous network_edge_int.txt：All edges of the heterogeneous network (serial number).
-s
